@@ -46,6 +46,7 @@ public class ArrayExamples {
             {
                 newArray[boyut]=thirdArray[i];
                 boyut++;
+                //dfg
             }
         }
 
