@@ -1,0 +1,2 @@
+public class soru1 {
+}
