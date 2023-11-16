@@ -13,6 +13,7 @@ public class ArrayExamples {
         //int [] newArray =assigntArray(myArray);
         //displayArray(newArray);
         int[] thirdArray = {1,4,7,9,8,14,10,3};
+        createNewArray(thirdArray);
 
     }
 
@@ -34,21 +35,32 @@ public class ArrayExamples {
         return secondArray;
 
     }
-
-    public static void createNewArray(int[] thirdArray)
+    public static int countEvenNumber(int[] array)
     {
-        int[] newArray;
-        int boyut=0;
-
-        for (int i=0; i<thirdArray.length; i++)
+        int count=0;
+        for (int i=0;i<array.length;i++)
         {
-            if (thirdArray[i]%2==0)
+            if (array[i]%2==0)
             {
-                newArray[boyut]=thirdArray[i];
-                boyut++;
-                //dfg
+                count++;
             }
         }
+        return count;
+    }
+
+    public static void createNewArray(int[] myArray)
+    {
+        int[] evenArray = new int[countEvenNumber(myArray)];
+        int indexEven =0;
+        for (int i=0;i<myArray.length;i++)
+        {
+            if (myArray[i]%2==0)
+            {
+                evenArray[indexEven]=myArray[i];
+                indexEven++;
+            }
+        }
+        displayArray(evenArray);
 
     }
 }
