@@ -32,7 +32,9 @@ public class Arrays {
         int[] newArray={5,14,7};
        // sumArray(newArray);
 
-        fillArray(newArray);
+        //fillArray(newArray);
+        //displayArray(newArray);
+        fillArrayRandomNumber(newArray);
         displayArray(newArray);
 
 

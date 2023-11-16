@@ -2,8 +2,13 @@ public class ArrayExamples {
 
     public static void main(String[] args) {
 
-        int [] myArray = {5,7,14};
+        //int [] myArray = {5,7,14};
+        //int i = countEvenNumber(myArray);
+        //System.out.println(i);
+
+
         //displayArray(myArray);
+
 
         /*for (int value:myArray)
         {
