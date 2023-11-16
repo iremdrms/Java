@@ -17,7 +17,8 @@ public class Invoice {
 
     public void setQuantity(int quantity)
     {
-        this.quantity=quantity;
+        if(quantity>10)
+            this.quantity=quantity;
     }
     public int getQuantity()
     {
@@ -25,7 +26,8 @@ public class Invoice {
     }
 
     public void setPrice(double price) {
-        this.price = price;
+        if(price>0)
+            this.price=price;
     }
 
     public double getPrice() {
